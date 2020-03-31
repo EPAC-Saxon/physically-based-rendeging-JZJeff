@@ -12,14 +12,14 @@ namespace sgl {
 
 	Image::Image(const std::string& file)
 	{
-		int width_pointer = GetWidth();
-		int height_pointer = GetHeight();
+		int width_pointer;
+		int height_pointer;
 		int channel_size ;
 		int desired_channel = STBI_rgb_alpha;
 
 		image_ = stbi_load(file.c_str(), &width_pointer, &height_pointer, &channel_size, desired_channel);
 
-		if (image_ == nullptr) {
+		if (image_ == NULL) {
 			throw std::runtime_error("Image null");
 		}
 	

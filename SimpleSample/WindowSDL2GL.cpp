@@ -157,7 +157,7 @@ namespace SoftwareGL {
 
 		// Mesh creation.
 		auto gl_mesh = 
-			std::make_shared<sgl::Mesh>("../Asset/TorusUVNormal.obj");
+			std::make_shared<sgl::Mesh>("../Asset/CubeUVNormal.obj");
 
 		// Create the texture and bind it to the mesh.
 		sgl::TextureManager texture_manager{};
