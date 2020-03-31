@@ -12,10 +12,10 @@ uniform sampler2D metallicMap;
 uniform sampler2D roughnessMap;
 uniform sampler2D aoMap;
 
-uniform vec3 camera_position;
 uniform vec3 light_position[4];
 uniform vec3 light_color[4];
 
+uniform vec3 camera_position;
 
 
 const float PI = 3.14159265359;

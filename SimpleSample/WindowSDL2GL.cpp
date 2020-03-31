@@ -157,22 +157,22 @@ namespace SoftwareGL {
 
 		// Mesh creation.
 		auto gl_mesh = 
-			std::make_shared<sgl::Mesh>("../Asset/CubeUVNormal.obj");
+			std::make_shared<sgl::Mesh>("../Asset/MonkeyUVNormal.obj");
 
 		// Create the texture and bind it to the mesh.
 		sgl::TextureManager texture_manager{};
 		texture_manager.AddTexture(
 			"albedoMap",
-			std::make_shared<sgl::Texture>("../Asset/Planks/Color.jpg"));
+			std::make_shared<sgl::Texture>("../Asset/Plaster/Color.jpg"));
 		texture_manager.AddTexture(
 			"normalMap",
-			std::make_shared<sgl::Texture>("../Asset/Planks/Normal.jpg"));
+			std::make_shared<sgl::Texture>("../Asset/Plaster/Normal.jpg"));
 		texture_manager.AddTexture(
 			"metallicMap",
-			std::make_shared<sgl::Texture>("../Asset/Planks/Metalness.jpg"));
+			std::make_shared<sgl::Texture>("../Asset/Plaster/Metalness.jpg"));
 		texture_manager.AddTexture(
 			"roughnessMap",
-			std::make_shared<sgl::Texture>("../Asset/Planks/Roughness.jpg"));
+			std::make_shared<sgl::Texture>("../Asset/Plaster/Roughness.jpg"));
 		texture_manager.AddTexture(
 			"aoMap",
 			std::make_shared<sgl::Texture>(
