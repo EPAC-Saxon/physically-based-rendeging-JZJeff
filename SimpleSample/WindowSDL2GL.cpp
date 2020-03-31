@@ -162,23 +162,23 @@ namespace SoftwareGL {
 		// Create the texture and bind it to the mesh.
 		sgl::TextureManager texture_manager{};
 		texture_manager.AddTexture(
-			"Color",
+			"albedoMap",
 			std::make_shared<sgl::Texture>("../Asset/Planks/Color.jpg"));
 		texture_manager.AddTexture(
-			"Normal",
+			"normalMap",
 			std::make_shared<sgl::Texture>("../Asset/Planks/Normal.jpg"));
 		texture_manager.AddTexture(
-			"Metallic",
+			"metallicMap",
 			std::make_shared<sgl::Texture>("../Asset/Planks/Metalness.jpg"));
 		texture_manager.AddTexture(
-			"Roughness",
+			"roughnessMap",
 			std::make_shared<sgl::Texture>("../Asset/Planks/Roughness.jpg"));
 		texture_manager.AddTexture(
-			"AmbientOcclusion",
+			"aoMap",
 			std::make_shared<sgl::Texture>(
 				"../Asset/Planks/AmbientOcclusion.jpg"));
 		gl_mesh->SetTextures(
-			{ "Color", "Normal", "Metallic", "Roughness", "AmbientOcclusion" });
+			{ "albedoMap", "normalMap", "metallicMap", "roughnessMap", "aoMap" });
 		device_->SetTextureManager(texture_manager);
 
 		// Pack it into a Scene object.
